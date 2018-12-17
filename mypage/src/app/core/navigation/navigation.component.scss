@@ -1,6 +1,6 @@
 
 mat-drawer-container{
-button:{
+button{
   text-align: center;
 }
 button:hover{
@@ -8,8 +8,9 @@ button:hover{
 }
 height:100%;
 .menu-btn{
-  margin:20px;
   height:60px;
+  top:5%;
+  left:3%;
   position: fixed;
   .mat-icon{
     font-size: 40px;
@@ -34,22 +35,42 @@ height:100%;
 
 }
 .mat-drawer-content{
-  h3{
-    position: absolute;
-    top:300px;
-    left:400px;
-    font-family:arial;
-    font-style:italic;
-    font-size:50px;
-  }
-  h2{
-    position: absolute;
-    top:360px;
-    left:400px;
-    font-family:arial;
-    font-style:unset;
-    font-size:60px;
-  }
+.mat-grid-list{
+  .startTile{
+    padding:0px;
+    background-color: black;
+    .greeting{
+      .firstLine{
+        margin:auto;
+        position: absolute;
+        top:10%;
+        left:3%;
+        font-family:arial;
+        font-size:250px;
+        color:white;
+      }
+      .secondLine{
+        margin:auto;
+        position: absolute;
+        top:30%;
+        left:3%;
+        font-family:arial;
+        font-size:250px;
+        color:white;
+      }
+      .thirdLine{
+        margin:auto;
+        position: absolute;
+        top:70%;
+        left:3%;
+        font-family:arial;
+        font-size:40px;
+        color:white;
+      }
+      }
+
+}
+}
 }
 
 

@@ -1,12 +1,10 @@
 <mat-drawer-container [hasBackdrop]="true">
   <mat-drawer #drawer [mode]="'over'">
-
   <ul>
       <button mat-flat-button (click)="drawer.toggle()">
-
           <mat-icon>arrow_back_ios</mat-icon>
         </button>
-  <button mat-flat-button>
+  <button mat-flat-button onclick="document.getElementById('story').scrollIntoView({ block: 'end',  behavior: 'smooth' })">
       My story so far
     </button>
     <button mat-flat-button>
@@ -15,12 +13,32 @@
   </ul>
   </mat-drawer>
   <mat-drawer-content>
-      <button class="menu-btn" mat-raised-button (click)="drawer.toggle()">
+      <mat-grid-list cols="1" rowHeight="852px">
+          <mat-grid-tile class="startTile"> 
+              <div class="greeting">
+                  <h2 class="firstLine">norman</h2>
+                  <h2 class="secondLine">yan</h2>
+                  <h2 class="thirdLine">data scientist - developer - investment banker - innovator</h2>              
+              </div>
+            </mat-grid-tile>
+          <mat-grid-tile id="story">
+2
+          </mat-grid-tile>
+          <mat-grid-tile>
+3
+          </mat-grid-tile>
+          <mat-grid-tile>
+4
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
           <mat-icon >menu</mat-icon>  
-        </button>
-      <img src="../assets/images/cover.JPG" width="100%" height="850px">
-      <h3>Hey, I'm</h3>
-      <h2>Norman Yan</h2>
+      </button>
+
+  
+
+
 
   </mat-drawer-content>
 </mat-drawer-container>
