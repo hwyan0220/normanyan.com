@@ -1,0 +1,153 @@
+<mat-drawer-container [hasBackdrop]="true">
+  <mat-drawer #drawer [mode]="'over'">
+  <ul>
+      <button mat-flat-button (click)="drawer.toggle()">
+          <mat-icon>arrow_back_ios</mat-icon>
+        </button>
+  <button mat-flat-button (click)= "navScroll('about')">
+      About me
+    </button>
+    <button mat-flat-button (click)= "navScroll('journey')">
+      My journey so far
+    </button>
+    <button mat-flat-button (click)= "navScroll('projects')">
+      Projects I have worked on
+    </button>
+    <button mat-flat-button (click)= "navScroll('blogs')">
+      Blogs, notes, thoughts and ideas
+    </button>
+    <button mat-flat-button (click)= "navScroll('contact')">
+      Getting connected
+    </button>
+  </ul>
+  </mat-drawer>
+  <mat-drawer-content>
+      <mat-grid-list cols="1" rowHeight="852px">
+          <mat-grid-tile id="greeting"> 
+
+                  <h2 class="firstLine">norman</h2>
+                  <h2 class="secondLine">yan</h2>
+                  <h2 class="thirdLine">data scientist - coder - banker - innovator</h2>              
+
+            </mat-grid-tile>
+          <mat-grid-tile id="about">
+            <div class="row">
+              <div class="col-md-12">
+              <div class="title">About</div>
+            </div>
+            </div>
+  <div class="row">
+    <div class="col-md-6 col-lg-7">
+      <div class="myBio">
+
+        
+        <br>
+        <div class="body">
+            Hi, I’m Norman.
+        <br>
+        <br>
+            I'm a data scientist working in Westpac Bank. I create lots of cool stuffs to make our bankers and customers lives easier. 
+        <br>
+        <br>    
+            I love my job so much as it's different everyday and gives me opportunities to create magical moments for people.
+        <br>
+        <br>
+            I have worked on many different roles in my past, I have worked as an investment banker specialised in IPO deals, worked as a financial analyst who looks after a public company's pricing model and annual budget. 
+        <br>
+        <br>
+            I was also deeply interested in quantitative trading which led me to create my own trading system and obtained my CFA designation. 
+        <br>
+        <br>    
+            I enjoy explaining complex data science concepts to people and have taken a part-time teaching assistant role in Sydney Uni last sememster.
+        <br>
+        <br>
+            Last but not least, I am also working hard on my research degree which I hope to finish in the next few years.
+        <br>
+        <br>
+            Data science is the superpower of our time and I'm super thankful that I had the chance to do things I love.
+      </div>
+
+      </div>
+        
+    </div>
+    <div class="col-md-6 col-lg-5 hidden-sm hidden xs">
+      <div class="myPhoto">
+<img src="../../assets/images/cover (1).jpg" width="100%">
+</div>    
+</div>
+  </div>
+          </mat-grid-tile>
+          <mat-grid-tile id="journey">
+              <div class="title">Here's what I've done so far</div>
+              <div class="exp">
+              <mat-card >
+                  <mat-card-header>
+                    <mat-card-title>Westpac, Analytics & Insights</mat-card-title>
+                    <mat-card-subtitle>Data Scientist</mat-card-subtitle>
+                    <mat-card-subtitle>JUNE 2018 - Present</mat-card-subtitle>
+                    <div class="cardImg">
+                    <img src="../../assets/images/logo-wbc-200.png" >
+                  </div>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <p>
+                        Led the development of Customer First Tool in Business Bank which serves as
+                        an one-stop-shop system supporting 1200 bankers across all Westpac brands.
+                        Solely built the data foundation, established data pipeline/ETL to make sure
+                        data flows smoothly, reliably and timely. Built client/server capabilities using
+                        latest Angular/.Net Core technologies. Deployed a chatbot using IBM Watson to
+                        facilitate customer support. We moved super fast with limited resources
+                        (completed this great work within 4 mths, from wireframe to deployment)
+                    </p>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="exp">
+                  <mat-card >
+                      <mat-card-header>
+                        <mat-card-title>Westpac, Analytics & Insights</mat-card-title>
+                        <mat-card-subtitle>Data Scientist</mat-card-subtitle>
+                        <mat-card-subtitle>JUNE 2018 - Present</mat-card-subtitle>
+                        <div class="cardImg">
+                        <img src="../../assets/images/logo-wbc-200.png" >
+                      </div>
+                      </mat-card-header>
+                      <mat-card-content>
+                        <p>
+                            Led the development of Customer First Tool in Business Bank which serves as
+                            an one-stop-shop system supporting 1200 bankers across all Westpac brands.
+                            Solely built the data foundation, established data pipeline/ETL to make sure
+                            data flows smoothly, reliably and timely. Built client/server capabilities using
+                            latest Angular/.Net Core technologies. Deployed a chatbot using IBM Watson to
+                            facilitate customer support. We moved super fast with limited resources
+                            (completed this great work within 4 mths, from wireframe to deployment)
+                        </p>
+                      </mat-card-content>
+                    </mat-card>
+                  </div>
+
+                      
+          </mat-grid-tile>
+          <mat-grid-tile id="projects"> 
+4
+          </mat-grid-tile>
+          <mat-grid-tile id="blogs"> 
+              5
+          </mat-grid-tile>
+          <mat-grid-tile id="contact"> 
+              6
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
+          <mat-icon >menu</mat-icon>  
+      </button>
+
+  
+
+
+
+  </mat-drawer-content>
+</mat-drawer-container>
+
+

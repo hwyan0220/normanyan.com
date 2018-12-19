@@ -1,0 +1,147 @@
+
+::ng-deep app-navigation{
+  
+mat-drawer-container{
+button{
+  text-align: center;
+
+}
+button:hover{
+  background-color:darkgray;
+}
+height:100%;
+.menu-btn{
+  height:60px;
+  top:5%;
+  left:3%;
+  position: fixed;
+  background-color:lightgray;
+  
+  .mat-icon{
+    font-size: 40px;
+    width:40px;
+    height:40px;
+  }
+
+
+}
+  .mat-drawer{
+  height:100%;
+  width:400px;
+  ul{
+    button{
+      font-size:18px;
+      width:100%;
+      height:50px;
+      text-align: start;
+    }
+    
+  }
+
+}
+.mat-drawer-content{
+.mat-grid-list{
+  #greeting{
+    padding:0px;
+    background: linear-gradient(135deg, black 0%, darkgray 75%, white 100%);
+
+      .firstLine{
+        margin:auto;
+        position: absolute;
+        top:10%;
+        left:3%;
+        font-family:arial;
+        font-size:250px;
+        color:white;
+      }
+      .secondLine{
+        margin:auto;
+        position: absolute;
+        top:30%;
+        left:3%;
+        font-family:arial;
+        font-size:250px;
+        color:white;
+      }
+      .thirdLine{
+        margin:auto;
+        position: absolute;
+        top:70%;
+        left:3%;
+        font-family:arial;
+        font-size:40px;
+        color:white;
+      }
+    }
+    #about{
+      .mat-figure{
+        display: grid;
+       
+      .row{
+        .col-md-12{
+      .title{
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+    }
+      .row{
+        .col-md-6{
+      .myBio{
+        margin:20px;
+
+        .body{
+          font-size: 18px;
+        }
+      }
+    }
+    .col-md-6{
+      .myPhoto{
+        margin:20px;
+      }
+    }
+    }
+  }}
+
+    
+    #journey{
+      background-color: white;
+      .mat-figure{
+        margin-left:10%;
+        margin-right:10%;
+        display: grid;
+        
+        .title{
+          font-size: 50px;
+          text-align: center;
+        }
+.exp{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+            .mat-card{
+              text-align: left;
+              width:80%;
+              .mat-card-header{
+              .mat-card-header-text{
+              width:80%;
+              }
+              
+              .cardImg{
+                width:40%;
+              }
+            }
+            }
+          }
+          }
+        }
+
+
+}
+
+
+}
+}
+
+
+}
