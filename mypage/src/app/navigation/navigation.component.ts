@@ -15,6 +15,6 @@ export class NavigationComponent {
 
 navScroll(target) {
   this.drawer.close();
-  document.getElementById(target).scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById(target).scrollIntoView({ block: 'start',  behavior: 'smooth' });
 }
 }

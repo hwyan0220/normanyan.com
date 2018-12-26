@@ -22,27 +22,22 @@
   </ul>
   </mat-drawer>
   <mat-drawer-content>
-      <mat-grid-list cols="1" rowHeight="852px">
-          <mat-grid-tile id="greeting"> 
-
+    
+    <div id="greeting">
                   <h2 class="firstLine">norman</h2>
                   <h2 class="secondLine">yan</h2>
-                  <h2 class="thirdLine">data scientist - coder - banker - innovator</h2>              
+                  <h2 class="thirdLine">data scientist - i-banker - innovator</h2>              
+    </div>
+    
+    
+    <div id="about">
+      <div class="title container">About</div>
 
-            </mat-grid-tile>
-          <mat-grid-tile id="about">
-            <div class="row">
-              <div class="col-md-12">
-              <div class="title">About</div>
-            </div>
-            </div>
-  <div class="row">
-    <div class="col-md-6 col-lg-7">
-      <div class="myBio">
+      <div class="myBio container">
 
         
         <br>
-        <div class="body">
+        <div class="body container">
             Hi, I’m Norman.
         <br>
         <br>
@@ -64,20 +59,19 @@
             Last but not least, I am also working hard on my research degree which I hope to finish in the next few years.
         <br>
         <br>
-            Data science is the superpower of our time and I'm super thankful that I had the chance to do things I love.
+            Data science is the superpower of modern time and I'm super thankful that I had the chance to do things I love.
       </div>
 
-      </div>
-        
-    </div>
-    <div class="col-md-6 col-lg-5 hidden-sm hidden xs">
-      <div class="myPhoto">
-<img src="../../assets/images/cover (1).jpg" width="100%">
-</div>    
+      
+
+      <div class="myPhoto container">
+<img src="../../assets/images/cover (1).jpg">
 </div>
-  </div>
-          </mat-grid-tile>
-          <mat-grid-tile id="journey">
+</div>
+</div>    
+
+
+          <div id="journey">
               <div class="title">Here's what I've done so far</div>
               <div class="exp">
               <div class="row">
@@ -112,28 +106,26 @@
               </div>
               <div class="exp">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 hidden-sm hidden-xs">
                       <div class="cardImg">
                         <img src="../../assets/images/logo-wbc-200.png" >
                       </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
                         <mat-card >
                             <mat-card-header>
-                              <mat-card-title>Westpac, Analytics & Insights</mat-card-title>
-                              <mat-card-subtitle class="myPosition">Data Scientist, since JUNE 2018</mat-card-subtitle>
+                              <mat-card-title>Westpac, St.George Industry Innovation Hub</mat-card-title>
+                              <mat-card-subtitle class="myPosition">Senior Analyst, Data Scientist, JUNE 2016 - MAY 2018</mat-card-subtitle>
                               <mat-card-subtitle class="myLocation">Sydney, NSW</mat-card-subtitle>
      
                             </mat-card-header>
                             <mat-card-content>
                               <p>
-                                  Led the development of Customer First Tool in Business Bank which serves as
-                                  an one-stop-shop system supporting 1200 bankers across all Westpac brands.
-                                  Solely built the data foundation, established data pipeline/ETL to make sure
-                                  data flows smoothly, reliably and timely. Built client/server capabilities using
-                                  latest Angular/.Net Core technologies. Deployed a chatbot using IBM Watson to
-                                  facilitate customer support. We moved super fast with limited resources
-                                  (completed this great work within 4 mths, from wireframe to deployment)
+                                  Solely built the data and analytics foundation of the team. Used network analysis to 
+                                  identify high quality linkedin leads for bankers. Used clustering and classification 
+                                  models to categorise customer transactions and identified over $100m split banking 
+                                  opportunities. Authored several Tableau reports and created shared datasets for my team 
+                                  to use in their own analysis.
                               </p>
                             </mat-card-content>
                           </mat-card>
@@ -141,18 +133,62 @@
     
                   </div>
                   </div>
-                      
-          </mat-grid-tile>
-          <mat-grid-tile id="projects"> 
-4
-          </mat-grid-tile>
-          <mat-grid-tile id="blogs"> 
-              5
-          </mat-grid-tile>
-          <mat-grid-tile id="contact"> 
-              6
-          </mat-grid-tile>
-        </mat-grid-list>
+                  <div class="exp">
+                      <div class="row">
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                          <div class="cardImg">
+                            <img src="../../assets/images/logo-wbc-200.png" >
+                          </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <mat-card >
+                                <mat-card-header>
+                                  <mat-card-title>Westpac, Human Capital Analytics</mat-card-title>
+                                  <mat-card-subtitle class="myPosition">Data Analyst, JULY 2014 - MAY 2016</mat-card-subtitle>
+                                  <mat-card-subtitle class="myLocation">Sydney, NSW</mat-card-subtitle>
+         
+                                </mat-card-header>
+                                <mat-card-content>
+                                  <p>
+                                      Created and implemented a classification model to predict likelihood that an arbitrary employee
+                                       would raise a stress incident. Led one system transformation project and several reporting automation 
+                                       projects.
+
+                                  </p>
+                                </mat-card-content>
+                              </mat-card>
+                        </div>
+        
+                      </div>
+                      </div>       
+                      <div class="exp">
+                          <div class="row">
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                              <div class="cardImg">
+                                <img src="../../assets/images/citi.svg.png" >
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 col-xs-12">
+                                <mat-card >
+                                    <mat-card-header>
+                                      <mat-card-title>Citigroup, Investment Banking Department</mat-card-title>
+                                      <mat-card-subtitle class="myPosition">Senior Associate, JANUARY 2011 - JUNE 2013</mat-card-subtitle>
+                                      <mat-card-subtitle class="myLocation">Shanghai, China</mat-card-subtitle>
+             
+                                    </mat-card-header>
+                                    <mat-card-content>
+                                      <p>
+                                          Executed 10 IPO, M&A, Debt and Private Equity deals for combined $350m
+
+    
+                                      </p>
+                                    </mat-card-content>
+                                  </mat-card>
+                            </div>
+            
+                          </div>
+                          </div>                
+                </div>
 
       <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
           <mat-icon >menu</mat-icon>  

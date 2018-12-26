@@ -1,6 +1,8 @@
 
 ::ng-deep app-navigation{
-  
+  $break-small: 320px;
+  $break-large: 768px;
+
 mat-drawer-container{
 button{
   text-align: center;
@@ -10,6 +12,7 @@ button:hover{
   background-color:darkgray;
 }
 height:100%;
+
 .menu-btn{
   height:60px;
   top:5%;
@@ -40,11 +43,14 @@ height:100%;
 
 }
 .mat-drawer-content{
-.mat-grid-list{
   #greeting{
+    height:852px;
     padding:0px;
     background: linear-gradient(135deg, black 0%, darkgray 75%, white 100%);
 
+    @media (max-width: $break-large){
+display:none;      
+    }
       .firstLine{
         margin:auto;
         position: absolute;
@@ -74,50 +80,67 @@ height:100%;
       }
     }
     #about{
-      .mat-figure{
-        display: grid;
-       
-      .row{
-        .col-md-12{
+      
+
+  
+   
       .title{
+        padding-top:20px;
+        padding-bottom:20px;
         font-size: 50px;
         text-align: center;
       }
-    }
-    }
-      .row{
-        .col-md-6{
+    
+    
+
       .myBio{
-        margin:20px;
+        padding-bottom:20px;
+        width:100%;
+        display: flex;
 
         .body{
           font-size: 18px;
+          width:50%;
+          
+          @media (max-width: $break-large){
+            width:100%;   
+                }
+        }
+      
+    
+
+     
+
+      .myPhoto{
+        margin:20px;
+        width:50%;
+        @media (max-width: $break-large){
+          display: none;
+          width:0%;   
+              }
+        img{
+          width:100%;
         }
       }
     }
-    .col-md-6{
-      .myPhoto{
-        margin:20px;
-      }
     }
-    }
-  }}
+  
 
     
     #journey{
+
       background-color: white;
-      .mat-figure{
-        margin-left:10%;
-        margin-right:10%;
-        display: grid;
         
         .title{
+          padding-top:20px;
+          padding-bottom:20px;
           font-size: 50px;
           text-align: center;
         }
 .exp{
   text-align: center;
-  display: flex;
+  margin-top:15px;
+  margin-bottom:15px;
   justify-content: center;
   .row{
     .col-md-4{
@@ -125,11 +148,17 @@ height:100%;
         display: flex;
         align-items:center;
         justify-content: center;
-        margin-left:20%;
+        margin-left:30%;
         border-radius: 10%;
         box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-        max-height: 240px;
-        min-height:240px;
+        height:200px;
+        width:220px;
+        img{
+          max-width: 150px;
+        }
+        @media (max-width: $break-large){
+          display:none;      
+              }
       }
     }
     .col-md-8{
@@ -161,7 +190,7 @@ height:100%;
   }
            
           }
-          }
+          
         }
 
 
@@ -172,4 +201,3 @@ height:100%;
 }
 
 
-}
