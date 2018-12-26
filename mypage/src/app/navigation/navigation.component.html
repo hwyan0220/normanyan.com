@@ -4,34 +4,49 @@
       <button mat-flat-button (click)="drawer.toggle()">
           <mat-icon>arrow_back_ios</mat-icon>
         </button>
-  <button mat-flat-button (click)= "navScroll('about')">
-      About me
-    </button>
-    <button mat-flat-button (click)= "navScroll('journey')">
-      My journey so far
-    </button>
-    <button mat-flat-button (click)= "navScroll('projects')">
-      Projects I have worked on
-    </button>
-    <button mat-flat-button (click)= "navScroll('blogs')">
-      Blogs, notes, thoughts and ideas
-    </button>
-    <button mat-flat-button (click)= "navScroll('contact')">
-      Getting connected
-    </button>
+        <button mat-flat-button (click)= "navScroll('about')">
+            About me
+          </button>
+          <button mat-flat-button (click)= "navScroll('journey')">
+            My journey so far
+          </button>
+          <button mat-flat-button (click)= "navScroll('projects')">
+            Projects & more projects
+          </button>
+          <button mat-flat-button (click)= "navScroll('blogs')">
+            Thoughts and ideas
+          </button>
+          <button mat-flat-button (click)= "navScroll('contact')">
+            Getting connected
+          </button>
   </ul>
   </mat-drawer>
   <mat-drawer-content>
-    
+
     <div id="greeting">
-                  <h2 class="firstLine">norman</h2>
-                  <h2 class="secondLine">yan</h2>
-                  <h2 class="thirdLine">data scientist - i-banker - innovator</h2>              
-    </div>
+        <div class="greetingContainer">
+                  <p class="firstLine">Hey, I'm</p>
+                  <br>
+                  <p class="secondLine">
+                    <strong>NORMAN YAN</strong>
+                  </p>
+                  <br>
+                  <p class="thirdLine">Welcome to my world, you can find more about
+                    <a href="#about">my story</a>, <a href="#journey">my journey</a> and <a href="/">my projects</a>. Also, please <a href="">get connected</a> with me.
+                  </p>
+                  
+                </div>
+
+                </div>
     
     
     <div id="about">
-      <div class="title container">About</div>
+        <a name="about"></a> 
+      <div class="title container">
+        <p class="titleContent">
+          <strong>About</strong>
+        </p>
+      </div>
 
       <div class="myBio container">
 
@@ -39,6 +54,7 @@
         <br>
         <div class="body container">
             Hi, I’m Norman.
+
         <br>
         <br>
             I'm a data scientist working in Westpac Bank. I create lots of cool stuffs to make our bankers and customers lives easier. 
@@ -60,19 +76,20 @@
         <br>
         <br>
             Data science is the superpower of modern time and I'm super thankful that I had the chance to do things I love.
-      </div>
+        
 
-      
-
-      <div class="myPhoto container">
-<img src="../../assets/images/cover (1).jpg">
-</div>
+        </div>
 </div>
 </div>    
 
 
           <div id="journey">
-              <div class="title">Here's what I've done so far</div>
+              <a name="journey"></a> 
+              <div class="title container">
+                  <p class="titleContent">
+                    <strong>Here's what I have done so far</strong>
+                  </p>
+                </div>
               <div class="exp">
                   <div class="imgContainer">
                   <div class="cardImg">
@@ -179,6 +196,10 @@
                             </div>
                           </div>
               
+
+
+
+
 
       <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
           <mat-icon >menu</mat-icon>  
