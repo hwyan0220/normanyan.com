@@ -19,13 +19,7 @@ height:100%;
   left:3%;
   position: fixed;
   background-color:lightgray;
-  visibility: hidden;
-  @media (max-width: $break-large){
-    visibility: visible; 
-        }
-        @media (orientation: portrait) {
-          visibility: visible; 
-        }
+
   .mat-icon{
     font-size: 40px;
     width:40px;
@@ -59,7 +53,7 @@ height:100%;
 
     min-height:852px;
     padding:0px;
-    background:  url("../../assets/images/cover.jpeg"), linear-gradient(135deg, black 0%, darkgray 75%, white 100%);
+    background:  url("../../assets/images/cover.jpeg");
     background-size:cover;
     @media (max-width: $break-large){
 display:none;      
@@ -75,15 +69,21 @@ width:100%;
       justify-content: center;
       align-items: center;
       height:852px;
-      margin-left:20%;
-      margin-right:20%;
       text-align: center;
+      position: relative;
       @media (orientation: portrait) {
         min-height:1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:852px;
+
+        text-align: center;
+        position: relative;
       }
       .firstLine{
         top:45%;
-        margin:auto;
+
         position: absolute;
 
         font-family:arial;
@@ -91,42 +91,45 @@ width:100%;
         font-style: italic;
         font-weight:700;
       }
-      .secondLine{
-        top:50%;
-        margin:auto;
-        position: absolute;
+      .title{
+        
+        display: flex;
+        padding-top:20px;
+        padding-bottom:20px;
+        justify-content: center;
+        align-content: center;
+        .titleContent{
+          top:60%;
+          font-family:arial;
+          font-size:300%;
+          font-weight:700;
+          display: block;
+        }
+        .titleContent::before{
+          background:black;
 
-        font-family:arial;
-        font-size:300%;
-        font-weight:700;
-      }
-      .secondLine::before{
-        background:black;
-        right:100%;
-        display: inline-block;
-        height:2px;
-        position: absolute;
-        top:50%;
-        width:80px;
-        content:" ";
-        margin:0 10px;
-      }
-      .secondLine::after{
-        background:black;
-        left:100%;
-        display: inline-block;
-        height:2px;
-        position: absolute;
-        top:50%;
-        width:80px;
-        content:" ";
-        margin:0 10px;
-      }
-      .thirdLine{
-        padding-left:100px;
-        padding-right:100px;
-        top:60%;  
-        position: absolute;
+          display: inline-block;
+          height:2px;
+          position: relative;
+          top:-25%;
+          width:80px;
+          content:" ";
+          margin:0 10px;
+          zoom:1;
+          
+        }
+        .titleContent::after{
+          background:black;
+
+          display: inline-block;
+          height:2px;
+          position: relative;
+          top:-25%;
+          width:80px;
+          content:" ";
+          margin:0 10px;
+          zoom:1;
+        }
       }
     }
 
@@ -263,6 +266,9 @@ width:100%;
 
     display: block;   
         }
+        @media (orientation: portrait) {
+          display: block;   
+              }
 .imgContainer{
   width:33%;
   display: flex;
@@ -274,6 +280,10 @@ width:100%;
     justify-content: center;
     width:100%;   
         }
+        @media (orientation: portrait) {
+          justify-content: center;
+          width:100%;    
+              }
       .cardImg{
         
         display: flex;
@@ -286,7 +296,12 @@ width:100%;
         img{
           max-width: 150px;
         }
+        @media (orientation: portrait) {
+          height:380px;
+          width:450px;    
+              }
       }
+      
     }
       .mat-card{
         padding-right:30px;
@@ -300,22 +315,47 @@ width:100%;
         .mat-card-title{
           font-size: 24px;
           color:#37c;
+          @media (orientation: portrait) {
+           
+            font-size:36px;
+                           }
         }
         .myPosition{
           color:#5e9516;
           font-size:18px;
+          @media (orientation: portrait) {
+           
+            font-size:24px;
+                           }
         }
         .myLocation{
           font-size:18px;
+          @media (orientation: portrait) {
+           
+ font-size:24px;
+                }
         }
         
         }
         
       }
+      .mat-card-content{
+        @media (orientation: portrait) {
+           
+          font-size:24px;
+              }
+      }
       @media (max-width: $break-large){
 
         width:100%;   
             }
+            @media (orientation: portrait) {
+           
+              width:100%;  
+              padding-left:150px;
+              padding-right:150px;
+              margin-top:20px;  
+                  }
       }
     }
   }
