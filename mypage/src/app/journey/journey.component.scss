@@ -1,0 +1,152 @@
+::ng-deep app-journey{
+    #journey{
+        @media (orientation: portrait) {
+          width:100%;
+          min-height:1600px;
+              }
+        background-color: white;
+          
+        .title{
+          display: flex;
+          padding-top:40px;
+          padding-bottom:40px;
+          justify-content: center;
+          align-content: center;
+          .titleContent{
+            font-family:arial;
+            font-size:200%;
+            font-weight:700;
+            display: block;
+          }
+          .titleContent::before{
+            background:black;
+  
+            display: inline-block;
+            height:2px;
+            position: relative;
+            top:-25%;
+            width:80px;
+            content:" ";
+            margin:0 10px;
+            zoom:1;
+            
+          }
+          .titleContent::after{
+            background:black;
+  
+            display: inline-block;
+            height:2px;
+            position: relative;
+            top:-25%;
+            width:80px;
+            content:" ";
+            margin:0 10px;
+            zoom:1;
+          }
+  
+        }
+          
+          
+  .exp{
+    width:100%;
+    display: flex;
+    margin-top:15px;
+    margin-bottom:15px;
+
+          @media (orientation: portrait) {
+            display: block;   
+                }
+  .imgContainer{
+    width:33%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding-right:20px;
+    min-height:230px;
+
+          @media (orientation: portrait) {
+            justify-content: center;
+            width:100%;    
+                }
+        .cardImg{
+          
+          display: flex;
+          align-items:center;
+          justify-content: center;
+          border-radius: 10%;
+          box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+          height:200px;
+          width:220px;
+          img{
+            max-width: 180px;
+          }
+          @media (orientation: portrait) {
+            height:45vh;
+            width:68vw;    
+                }
+        }
+        
+      }
+      .cardContainer{
+        display: flex;
+        justify-content: center;
+        padding:0;
+        width:67%;
+        @media (orientation: portrait) {
+             
+          width:100%;    
+        }
+  
+        .mat-card{
+          padding-right:30px;
+          text-align: left;
+          box-shadow: none;
+          width:100%;
+          .mat-card-header{
+          .mat-card-header-text{
+          margin:0px;
+          width:80%;
+          .mat-card-title{
+            font-size: 24px;
+            color:#37c;
+            @media (orientation: portrait) {
+             
+              font-size:36px;
+                             }
+          }
+          .myPosition{
+            color:#5e9516;
+            font-size:18px;
+            @media (orientation: portrait) {
+             
+              font-size:24px;
+                             }
+          }
+          .myLocation{
+            font-size:18px;
+            @media (orientation: portrait) {
+             
+   font-size:24px;
+                  }
+          }
+          
+          }
+          
+        }
+        .mat-card-content{
+          @media (orientation: portrait) {
+             
+            font-size:24px;
+                }
+        }
+              @media (orientation: portrait) {
+             
+                width:68vw;  
+                margin-top:20px;  
+                padding:0px;      
+              }
+        }
+      }
+      }
+    }
+  } 

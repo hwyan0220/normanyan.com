@@ -1,0 +1,79 @@
+#greeting{
+
+    height:100vh;
+    padding:0px;
+    background:  url("../../assets/images/cover.jpeg");
+    background-size:auto 100vh;
+
+    @media (orientation: portrait) {
+max-height:100vh;
+background:  url("../../assets/images/cover1.jpg");
+background-size:auto 100vh;
+    }
+.greetingContainer{
+      display: flex;
+      height:100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      @media (orientation: portrait) {
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+      .firstLine{
+        top:40%;
+
+        position: absolute;
+
+        font-family:arial;
+        font-size:130%;
+        font-style: italic;
+        font-weight:700;
+      }
+      .title{
+        
+        display: flex;
+        padding-top:20px;
+        padding-bottom:20px;
+        justify-content: center;
+        .titleContent{
+
+          font-family:arial;
+          font-size:300%;
+          font-weight:700;
+          display: block;
+        }
+        .titleContent::before{
+          background:black;
+
+          display: inline-block;
+          height:2px;
+          position: relative;
+          top:-25%;
+          width:80px;
+          content:" ";
+          margin:0 10px;
+          zoom:1;
+          
+        }
+        .titleContent::after{
+          background:black;
+
+          display: inline-block;
+          height:2px;
+          position: relative;
+          top:-25%;
+          width:80px;
+          content:" ";
+          margin:0 10px;
+          zoom:1;
+        }
+      }
+    }
+
+    }

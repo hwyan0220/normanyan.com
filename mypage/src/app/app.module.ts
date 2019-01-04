@@ -8,11 +8,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { 
   MatToolbarModule, MatButtonModule, MatSidenavModule,
   MatIconModule, MatListModule, MatGridListModule, MatCardModule} from '@angular/material';
+import { GreetingComponent } from './greeting/greeting.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { JourneyComponent } from './journey/journey.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    GreetingComponent,
+    AboutMeComponent,
+    JourneyComponent
   ],
   imports: [
     BrowserModule,

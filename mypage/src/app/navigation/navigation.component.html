@@ -1,211 +1,28 @@
 <mat-drawer-container [hasBackdrop]="true">
   <mat-drawer #drawer [mode]="'over'">
-  <ul>
+    <ul>
       <button mat-flat-button (click)="drawer.toggle()">
-          <mat-icon>arrow_back_ios</mat-icon>
-        </button>
-        <button mat-flat-button (click)= "navScroll('about')">
-            About me
-          </button>
-          <button mat-flat-button (click)= "navScroll('journey')">
-            My journey so far
-          </button>
-          <button mat-flat-button (click)= "navScroll('projects')">
-            Projects & more projects
-          </button>
-          <button mat-flat-button (click)= "navScroll('blogs')">
-            Thoughts and ideas
-          </button>
-          <button mat-flat-button (click)= "navScroll('contact')">
-            Getting connected
-          </button>
-  </ul>
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+      <button mat-flat-button (click)= "navScroll('about')"
+        *ngFor="let btn of navButtons">
+        {{btn}}
+      </button>
+    </ul>
   </mat-drawer>
   <mat-drawer-content>
-
     <div id="greeting">
-        <div class="greetingContainer">
-                  <p class="firstLine">Hey, I'm</p>
-                  <br>
-                  <div class="title container">
-                  <p class="titleContent">
-                    <strong>NORMAN YAN</strong>
-                  </p>
-                </div>
-                </div>
-
-                </div>
-    
-    
+      <app-greeting></app-greeting>
+    </div>
     <div id="about">
-        <a name="about"></a> 
-      <div class="title container">
-        <p class="titleContent">
-          <strong>About</strong>
-        </p>
-      </div>
-
-      <div class="myBio container">
-
-        
-        <br>
-        <div class="body container">
-            Hi, I’m Norman.
-
-        <br>
-        <br>
-            I'm a data scientist working in Westpac Bank. I create lots of cool stuffs to make our bankers and customers lives easier. 
-        <br>
-        <br>    
-            I love my job so much as it's different everyday and gives me opportunities to create magical moments for people.
-        <br>
-        <br>
-            I have worked on many different roles in my past, I have worked as an investment banker specialised in IPO deals, worked as a financial analyst who looks after a public company's pricing model and annual budget. 
-        <br>
-        <br>
-            I was also deeply interested in quantitative trading which led me to create my own trading system and obtained my CFA designation. 
-        <br>
-        <br>    
-            I enjoy explaining complex data science concepts to people and have taken a part-time teaching assistant role in Sydney Uni last sememster.
-        <br>
-        <br>
-            Last but not least, I am also working hard on my research degree which I hope to finish in the next few years.
-        <br>
-        <br>
-            Data science is the superpower of modern time and I'm super thankful that I had the chance to do things I love.
-        
-
-        </div>
-</div>
-</div>    
-
-
-          <div id="journey">
-              <a name="journey"></a> 
-              <div class="title container">
-                  <p class="titleContent">
-                    <strong>Here's what I have done so far</strong>
-                  </p>
-                </div>
-              <div class="exp">
-                  <div class="imgContainer">
-                  <div class="cardImg">
-                    <img src="../../assets/images/logo-wbc-200.png" >
-                  </div>
-                  </div>
-   
-                    <mat-card>
-                        <mat-card-header>
-                          <mat-card-title>Westpac, Analytics & Insights</mat-card-title>
-                          <mat-card-subtitle class="myPosition">Data Scientist, since June 2018</mat-card-subtitle>
-                          <mat-card-subtitle class="myLocation">Sydney, NSW</mat-card-subtitle>
- 
-                        </mat-card-header>
-                        <mat-card-content>
-                          <p>
-                              Led the development of Customer First Tool in Business Bank which serves as
-                              an one-stop-shop system supporting 1200 bankers across all Westpac brands.
-                              Solely built the data foundation, established data pipeline/ETL to make sure
-                              data flows smoothly, reliably and timely. Built client/server capabilities using
-                              latest Angular/.Net Core technologies. Deployed a chatbot using IBM Watson to
-                              facilitate customer support. We moved super fast with limited resources
-                              (completed this great work within 4 mths, from wireframe to deployment)
-                          </p>
-                        </mat-card-content>
-                      </mat-card>
-                </div>
-
-              
-              
-              <div class="exp">
-                <div class="imgContainer">
-                      <div class="cardImg">
-                        <img src="../../assets/images/logo-wbc-200.png" >
-                      </div>
-                    </div>
-                        <mat-card >
-                            <mat-card-header>
-                              <mat-card-title>Westpac, St.George Industry Innovation Hub</mat-card-title>
-                              <mat-card-subtitle class="myPosition">Senior Analyst, Data Scientist, JUNE 2016 - MAY 2018</mat-card-subtitle>
-                              <mat-card-subtitle class="myLocation">Sydney, NSW</mat-card-subtitle>
-     
-                            </mat-card-header>
-                            <mat-card-content>
-                              <p>
-                                  Solely built the data and analytics foundation of the team. Used network analysis to 
-                                  identify high quality linkedin leads for bankers. Used clustering and classification 
-                                  models to categorise customer transactions and identified over $100m split banking 
-                                  opportunities. Authored several Tableau reports and created shared datasets for my team 
-                                  to use in their own analysis.
-                              </p>
-                            </mat-card-content>
-                          </mat-card>
-                    </div>
-    
-             
-               
-                  <div class="exp">
-                      <div class="imgContainer">
-                          <div class="cardImg">
-                            <img src="../../assets/images/logo-wbc-200.png" >
-                          </div>
-</div>
-                            <mat-card >
-                                <mat-card-header>
-                                  <mat-card-title>Westpac, Human Capital Analytics</mat-card-title>
-                                  <mat-card-subtitle class="myPosition">Data Analyst, JULY 2014 - MAY 2016</mat-card-subtitle>
-                                  <mat-card-subtitle class="myLocation">Sydney, NSW</mat-card-subtitle>
-         
-                                </mat-card-header>
-                                <mat-card-content>
-                                  <p>
-                                      Created and implemented a classification model to predict likelihood that an arbitrary employee
-                                       would raise a stress incident. Led one system transformation project and several reporting automation 
-                                       projects.
-
-                                  </p>
-                                </mat-card-content>
-                              </mat-card>
-                        </div>
-        
-           
-                      <div class="exp">
-                          <div class="imgContainer">
-                              <div class="cardImg">
-                                <img src="../../assets/images/citi.svg.png" >
-                              </div>
-</div>  
-                                <mat-card >
-                                    <mat-card-header>
-                                      <mat-card-title>Citigroup, Investment Banking Department</mat-card-title>
-                                      <mat-card-subtitle class="myPosition">Senior Associate, JANUARY 2011 - JUNE 2013</mat-card-subtitle>
-                                      <mat-card-subtitle class="myLocation">Shanghai, China</mat-card-subtitle>
-             
-                                    </mat-card-header>
-                                    <mat-card-content>
-                                      <p>
-                                          Executed 10 IPO, M&A, Debt and Private Equity deals for combined $350m
-
-    
-                                      </p>
-                                    </mat-card-content>
-                                  </mat-card>
-                            </div>
-                          </div>
-              
-
-
-
-
-
-      <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
-          <mat-icon >menu</mat-icon>  
-      </button>
-
-  
-
-
-
+      <app-about-me></app-about-me>
+    </div>
+    <div id="journey">
+      <app-journey></app-journey>
+    </div>
+    <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
+      <mat-icon >menu</mat-icon>  
+    </button>
   </mat-drawer-content>
 </mat-drawer-container>
 

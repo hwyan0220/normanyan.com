@@ -13,6 +13,10 @@ export class NavigationComponent {
 
   constructor() {}
 
+navButtons = [
+'About me', 'My journey so far', 'My projects', 'Thoughts and ideas', 'Getting connected'
+] ;
+
 navScroll(target) {
   this.drawer.close();
   document.getElementById(target).scrollIntoView({ block: 'start',  behavior: 'smooth' });

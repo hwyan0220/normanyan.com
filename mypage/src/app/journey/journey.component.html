@@ -1,0 +1,31 @@
+<div id="journey">
+      
+    <div class="title container">
+        <p class="titleContent">
+          <strong>Here's what I have done so far</strong>
+        </p>
+      </div>
+    <div class="exp" *ngFor="let exp of experiences">
+        <div class="imgContainer">
+        <div class="cardImg">
+          <img src={{exp.img}} >
+        </div>
+        </div>
+        <div class="cardContainer">
+
+          <mat-card>
+              <mat-card-header>
+                <mat-card-title>{{exp.team}}}</mat-card-title>
+                <mat-card-subtitle class="myPosition">{{exp.position}}}, {{exp.period}}}</mat-card-subtitle>
+                <mat-card-subtitle class="myLocation">{{exp.location}}}</mat-card-subtitle>
+
+              </mat-card-header>
+              <mat-card-content>
+                <p>
+                  {{exp.duties}}
+                </p>
+              </mat-card-content>
+            </mat-card>
+            </div>
+      </div>
+</div>
