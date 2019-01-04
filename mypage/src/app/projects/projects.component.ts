@@ -7,6 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+
+  projects =
+  [
+    {
+      name: 'Sector Demand Analysis',
+      url: '',
+      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      desc: ''
+    },
+    {
+      name: 'Sector Demand Analysis',
+      url: '',
+      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      desc: ''
+    },
+    {
+      name: 'Sector Demand Analysis',
+      url: '',
+      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      desc: ''
+    },
+    {
+      name: 'Sector Demand Analysis',
+      url: '',
+      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      desc: ''
+    },
+    {
+      name: 'Sector Demand Analysis',
+      url: '',
+      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
+      desc: ''
+    },
+  ];
   constructor() { }
 
   ngOnInit() {

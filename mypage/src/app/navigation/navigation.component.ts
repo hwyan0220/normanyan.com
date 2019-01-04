@@ -23,7 +23,7 @@ navButtons = [
     loc: 'journey'
   },
   {
-    desc: 'My projects',
+    desc: 'Projects I\'ve worked on',
     loc: 'projects'
   },
   {

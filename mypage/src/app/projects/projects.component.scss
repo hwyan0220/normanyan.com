@@ -1,0 +1,68 @@
+::ng-deep app-projects{
+    #projects{
+        padding-top:40px;
+        padding-bottom:40px;
+        min-height:100vh;
+        @media (orientation: portrait) {
+          width:100%;
+          min-height:100vh;
+              }
+              .title{
+                display: flex;
+                padding-top:20px;
+                padding-bottom:20px;
+                justify-content: center;
+                align-content: center;
+
+                .titleContent{
+                  font-family:arial;
+                  font-size:200%;
+                  font-weight:500;
+                  display: block;
+                  text-align: center;
+                }
+                
+              }
+              .title::before{
+                background:black;
+                left:-20px;
+                display: inline-block;
+                height:2px;
+                position: relative;
+                top:20px;
+                width:80px;
+                content:" ";
+                zoom:1;
+                
+              }
+              .title::after{
+                background:black;
+                right:-20px;
+                display: inline-block;
+                height:2px;
+                position: relative;
+                top:20px;
+                width:80px;
+                content:" ";
+                zoom:1;
+              }
+              .work{
+                .mat-grid-list{
+                  .mat-grid-tile{
+                    .mat-figure{
+                      .mat-card{
+                        height:100%;
+                        .mat-card-header{
+                          .mat-card-header-text{
+                            .mat-card-title{
+                              font-size: 18px;
+                          }
+                        }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+        }

@@ -1,3 +1,21 @@
-<p>
-  projects works!
-</p>
+<div id="projects">
+    <div class="title container">
+      <p class="titleContent">
+        <strong>
+          Projects I've worked on
+        </strong>
+      </p>
+    </div>
+    <div class="work container">
+      <mat-grid-list cols="3" rowHeight="1:1" gutterSize="5px">
+        <mat-grid-tile *ngFor="let project of projects">
+            <mat-card >
+                <mat-card-header>
+                  <mat-card-title>{{project.name}}</mat-card-title>
+                </mat-card-header>    
+              <img mat-card-image src={{project.img}}>     
+            </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
