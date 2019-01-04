@@ -11,6 +11,8 @@ import {
 import { GreetingComponent } from './greeting/greeting.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { JourneyComponent } from './journey/journey.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { JourneyComponent } from './journey/journey.component';
     NavigationComponent,
     GreetingComponent,
     AboutMeComponent,
-    JourneyComponent
+    JourneyComponent,
+    ProjectsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,26 @@ export class NavigationComponent {
   constructor() {}
 
 navButtons = [
-'About me', 'My journey so far', 'My projects', 'Thoughts and ideas', 'Getting connected'
+  {
+    desc: 'About me',
+    loc: 'about'
+  },
+  {
+    desc: 'My journey so far',
+    loc: 'journey'
+  },
+  {
+    desc: 'My projects',
+    loc: 'projects'
+  },
+  {
+    desc: 'Thoughts and ideas',
+    loc: 'thoughts'
+  },
+  {
+    desc: 'Getting connected',
+    loc: 'contacts'
+  }
 ] ;
 
 navScroll(target) {

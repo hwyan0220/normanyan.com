@@ -1,5 +1,7 @@
 ::ng-deep app-journey{
     #journey{
+      padding-top:40px;
+      padding-bottom:40px;
         @media (orientation: portrait) {
           width:100%;
           min-height:1600px;

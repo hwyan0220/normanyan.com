@@ -1,0 +1,59 @@
+::ng-deep app-contacts{
+    #contacts{
+        padding-top:40px;
+        padding-bottom:40px;
+        min-height:100vh;
+        @media (orientation: portrait) {
+          width:100%;
+          min-height:100vh;
+              }
+              .title{
+                display: flex;
+                padding-top:20px;
+                padding-bottom:20px;
+                justify-content: center;
+                align-content: center;
+
+                .titleContent{
+                  font-family:arial;
+                  font-size:200%;
+                  font-weight:500;
+                  display: block;
+                  text-align: center;
+                }
+                
+              }
+              .title::before{
+                background:black;
+  
+                display: inline-block;
+                height:2px;
+                position: relative;
+                top:50px;
+                width:80px;
+                content:" ";
+                zoom:1;
+                
+              }
+              .title::after{
+                background:black;
+  
+                display: inline-block;
+                height:2px;
+                position: relative;
+                top:50px;
+                width:80px;
+                content:" ";
+                zoom:1;
+              }
+              .subtitle{
+                display: flex;
+                justify-content: center;
+              }
+              .logo{
+                  display: flex;
+                  height:300px;
+                  justify-content: center;
+              }
+            }
+        }

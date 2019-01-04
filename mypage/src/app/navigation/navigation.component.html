@@ -4,9 +4,9 @@
       <button mat-flat-button (click)="drawer.toggle()">
         <mat-icon>arrow_back_ios</mat-icon>
       </button>
-      <button mat-flat-button (click)= "navScroll('about')"
+      <button mat-flat-button (click)= "navScroll(btn.loc)"
         *ngFor="let btn of navButtons">
-        {{btn}}
+        {{btn.desc}}
       </button>
     </ul>
   </mat-drawer>
@@ -19,6 +19,12 @@
     </div>
     <div id="journey">
       <app-journey></app-journey>
+    </div>
+    <div id="projects">
+        <app-projects></app-projects>
+    </div>
+    <div id="contacts">
+        <app-contacts></app-contacts>
     </div>
     <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
       <mat-icon >menu</mat-icon>  
