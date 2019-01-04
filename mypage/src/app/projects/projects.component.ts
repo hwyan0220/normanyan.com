@@ -13,32 +13,37 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Sector Demand Analysis',
       url: '',
-      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: ''
+      img: 'https://cdn.newsapi.com.au/image/v1/9b40c7068b9f6a4e999fc4a77c014156',
+      desc: '',
+      type: 'Industry Research'
+    },
+    {
+      name: 'Employee Stress Classification',
+      url: '',
+      img: 'https://cdn.newsapi.com.au/image/v1/a27625a67fb1c66c2fa51912b9f255bf',
+      desc: '',
+      type: 'Machine Learning'
+    },
+    {
+      name: 'Little Helper Chatbot Project',
+      url: '',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTx_Nh7uMJl7oxs6ZggY0NddHXXyLAGtNwB__ihEBMHoUHdV1',
+      desc: '',
+      type: 'Web Dev/Machine Learning'
     },
     {
       name: 'Sector Demand Analysis',
       url: '',
       img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: ''
+      desc: '',
+      type: 'Industry Research'
     },
     {
       name: 'Sector Demand Analysis',
       url: '',
       img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: ''
-    },
-    {
-      name: 'Sector Demand Analysis',
-      url: '',
-      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: ''
-    },
-    {
-      name: 'Sector Demand Analysis',
-      url: '',
-      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: ''
+      desc: '',
+      type: 'Industry Research'
     },
   ];
   constructor() { }
