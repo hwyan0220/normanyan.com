@@ -3,7 +3,7 @@
     height:100vh;
     padding:0px;
     background:  url("../../assets/images/cover.jpeg");
-    background-size:auto 100vh;
+    background-size:cover;
 
     @media (orientation: portrait) {
 max-height:100vh;
