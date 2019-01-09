@@ -4,11 +4,13 @@
     padding:0px;
     background:  url("../../assets/images/cover.jpeg");
     background-size:cover;
+    background-repeat: no-repeat;
 
     @media (orientation: portrait) {
 max-height:100vh;
 background:  url("../../assets/images/cover1.jpg");
 background-size:auto 100vh;
+background-repeat: no-repeat;
     }
 .greetingContainer{
       display: flex;
@@ -36,7 +38,8 @@ background-size:auto 100vh;
         font-weight:700;
       }
       .title{
-        
+        position:absolute;
+        top:45%;
         display: flex;
         padding-top:20px;
         padding-bottom:20px;
@@ -47,6 +50,10 @@ background-size:auto 100vh;
           font-size:300%;
           font-weight:700;
           display: block;
+          @media (orientation: portrait) {
+            line-height: 1.2;
+            font-size:700%;
+                            }
         }
         .titleContent::before{
           background:black;
@@ -59,7 +66,9 @@ background-size:auto 100vh;
           content:" ";
           margin:0 10px;
           zoom:1;
-          
+          @media (orientation: portrait) {
+display: none;
+                }
         }
         .titleContent::after{
           background:black;
@@ -72,6 +81,12 @@ background-size:auto 100vh;
           content:" ";
           margin:0 10px;
           zoom:1;
+          @media (orientation: portrait) {
+            display: grid;
+            left:40%;
+            width:120px;
+            top:0;
+                            }
         }
       }
     }
