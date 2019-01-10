@@ -16,7 +16,7 @@ export class ThoughtsComponent implements OnInit {
       desc: '',
     },
     {
-      title: 'Exploring Relationship between “Quality of Life” Factors and Sydney Property Prices',
+      title: 'Relationship between “Quality of Life” Factors and Sydney Property Prices',
       url: '',
       img: 'https://cdn.theatlantic.com/assets/media/img/mt/2018/06/GettyImages_81100278/lead_720_405.jpg?mod=1533691460',
       desc: '',
