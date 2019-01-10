@@ -29,9 +29,13 @@ height:100%;
 
 
 }
+#btnGrp{
+  top:82%;
+  right:3%;
+
 .up-btn{
   height:60px;
-  top:90%;
+  top:82%;
   right:3%;
   position: fixed;
   background-color:lightgray;
@@ -45,7 +49,23 @@ height:100%;
 
 
 }
+.down-btn{
+  height:60px;
+  top:92%;
+  right:3%;
+  position: fixed;
+  background-color:lightgray;
 
+  .mat-icon{
+    font-size: 40px;
+    width:40px;
+    height:40px;
+
+  }
+
+
+}
+}
   .mat-drawer{
   height:100%;
   width:500px;
