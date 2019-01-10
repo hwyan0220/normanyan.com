@@ -55,7 +55,9 @@ height:100%;
   right:3%;
   position: fixed;
   background-color:lightgray;
-
+  @media (orientation: portrait) {
+    top:90%;
+        }
   .mat-icon{
     font-size: 40px;
     width:40px;
