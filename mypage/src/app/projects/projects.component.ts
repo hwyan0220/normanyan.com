@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
+  public status = false;
 
   projects =
   [
@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
       name: 'Sector Demand Analysis',
       url: '',
       img: 'https://cdn.newsapi.com.au/image/v1/9b40c7068b9f6a4e999fc4a77c014156',
-      desc: '',
+      desc: 'In this project, we take data from Australian Census',
       type: 'Industry Research'
     },
     {
@@ -49,6 +49,14 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+
+  clickEvent(e) {
+    console.log(e);
+    const card = e.path[3].childNodes[1].childNodes[0];
+    card.classList.toggle('is-flipped');
+  }
+
 
 }

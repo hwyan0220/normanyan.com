@@ -7,17 +7,26 @@
       </p>
     </div>
     <div class="work container">
-      <mat-grid-list cols="3" rowHeight="360" gutterSize="5px">
+      <mat-grid-list cols="2" rowHeight="360" gutterSize="5px">
         <mat-grid-tile *ngFor="let project of projects">
             <mat-card >
-                <mat-card-header>
-                  <mat-card-title>{{project.name}}</mat-card-title>
-                  <mat-card-subtitle>{{project.type}}</mat-card-subtitle>
-                </mat-card-header>
-              <img mat-card-image src={{project.img}}>
+              <mat-card-header>
+                <mat-card-title>{{project.name}}</mat-card-title>
+                <mat-card-subtitle>{{project.type}}</mat-card-subtitle>
+              </mat-card-header>
+              <div class="scene">
+                <div class="card">
+                  <div class="card-face card-face-front">
+                    <img mat-card-image src={{project.img}}>
+                  </div>
+                  <div class="card-face card-face-back">
+                    <p>{{project.desc}}</p>
+                  </div>
+                </div>
+              </div>
               <mat-card-actions>
+                  <button mat-button (click)="clickEvent($event)">BRIEF INTRO</button>
                   <button mat-button>CHECK IT OUT</button>
-                  <button mat-button>SHARE</button>
               </mat-card-actions>
             </mat-card>
         </mat-grid-tile>

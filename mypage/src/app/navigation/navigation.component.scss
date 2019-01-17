@@ -30,12 +30,12 @@ height:100%;
 
 }
 #btnGrp{
-  top:82%;
+  top:75%;
   right:3%;
 
 .up-btn{
   height:60px;
-  top:82%;
+  top:75%;
   right:3%;
   position: fixed;
   background-color:lightgray;
@@ -51,12 +51,12 @@ height:100%;
 }
 .down-btn{
   height:60px;
-  top:92%;
+  top:83%;
   right:3%;
   position: fixed;
   background-color:lightgray;
   @media (orientation: portrait) {
-    top:90%;
+    top:83%;
         }
   .mat-icon{
     font-size: 40px;

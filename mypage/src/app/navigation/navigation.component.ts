@@ -54,9 +54,6 @@ btnScroll(id) {
     for ( let i = 0; i < sections.length; i++) {
       if (btnPos < document.getElementById(sections[i]).offsetTop) {
         btnIdx = i;
-        console.log('btnPos is: ' + btnPos);
-        console.log('next section is: ' + document.getElementById(sections[i]).offsetTop);
-        console.log(btnIdx);
         break;
       } else {
         continue;
