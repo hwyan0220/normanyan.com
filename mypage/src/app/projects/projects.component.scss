@@ -93,7 +93,13 @@
                           .card-face p{
                             width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
                             height: 100%;
-                            margin:0px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size:larger;
+                            padding-left:15px;
+                            padding-right:15px;
                           }
 
                           }
@@ -111,6 +117,16 @@
                             margin:0;
                             width:50%;
                             height:100%;
+                            .mat-button-wrapper{
+                              top:0;
+                              left:0;
+                              right:0;
+                              bottom:0;
+                              position: absolute;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                            }
                           }
                         }
                       }

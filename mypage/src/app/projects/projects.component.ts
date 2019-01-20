@@ -11,39 +11,45 @@ export class ProjectsComponent implements OnInit {
   projects =
   [
     {
-      name: 'Sector Demand Analysis',
+      name: 'Childcare Sector Opportunity Analysis',
       url: '',
       img: 'https://cdn.newsapi.com.au/image/v1/9b40c7068b9f6a4e999fc4a77c014156',
-      desc: 'In this project, we take data from Australian Census',
+      desc: 'This is an interactive dashboard built to help childcare owner to find the next best place\
+            for expansion anywhere in Australia',
       type: 'Industry Research'
     },
     {
       name: 'Employee Stress Classification',
       url: '',
       img: 'https://cdn.newsapi.com.au/image/v1/a27625a67fb1c66c2fa51912b9f255bf',
-      desc: '',
+      desc: 'Used random forest to find employees who are most prone to mental stress\
+      This model improved worker compensation outcome with early intervention (reduce povision by $1m)\
+      ',
       type: 'Machine Learning'
     },
     {
       name: 'Little Helper Chatbot Project',
       url: '',
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTx_Nh7uMJl7oxs6ZggY0NddHXXyLAGtNwB__ihEBMHoUHdV1',
-      desc: '',
+      desc: 'A little chabot I created using Google\'s dialogueflow service and angular. \
+      This bot serves as a personal assistant to help with people\'s request while I am not around',
       type: 'Web Dev/Machine Learning'
     },
     {
-      name: 'Sector Demand Analysis',
+      name: 'Social Network Lead Generator',
       url: '',
-      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: '',
-      type: 'Industry Research'
+      img: 'https://cdn.makeawebsitehub.com/wp-content/uploads/2016/04/social_media.jpg',
+      desc: 'A python powered digital solution which mines social networks data and supply user useful \
+      "warm leads" information based on user\'s criteria',
+      type: 'Digital Solution/Business Development'
     },
     {
-      name: 'Sector Demand Analysis',
+      name: 'Product Propensity Analysis',
       url: '',
-      img: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      desc: '',
-      type: 'Industry Research'
+      img: 'https://landerapp.com/blog/wp-content/uploads/2018/05/MAG-FR-Oestreicher-Singer-Product-Recommendation-Viral-Marketing-Social-Media-Network-Ecommerce-1200-1200x627.jpg',
+      desc: 'A model identifies customers who are most likely to purchase a product based on \
+      behaviroral and demographic factors',
+      type: 'Machine Learning'
     },
   ];
   constructor() { }
@@ -53,7 +59,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   clickEvent(e) {
-    console.log(e);
     if (e.path[3].childNodes &&
       e.path[3].childNodes[1] &&
       e.path[3].childNodes[1].childNodes &&
