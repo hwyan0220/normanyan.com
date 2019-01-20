@@ -54,8 +54,13 @@ export class ProjectsComponent implements OnInit {
 
   clickEvent(e) {
     console.log(e);
+    if (e.path[3].childNodes &&
+      e.path[3].childNodes[1] &&
+      e.path[3].childNodes[1].childNodes &&
+      e.path[3].childNodes[1].childNodes[0]) {
     const card = e.path[3].childNodes[1].childNodes[0];
     card.classList.toggle('is-flipped');
+      }
   }
 
 
