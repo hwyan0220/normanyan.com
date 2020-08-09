@@ -1,0 +1,47 @@
+<mat-drawer-container [hasBackdrop]="true">
+  <mat-drawer #drawer [mode]="'over'">
+    <ul>
+      <button mat-flat-button (click)="drawer.toggle()">
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+      <button mat-flat-button (click)= "navScroll(btn.loc)"
+        *ngFor="let btn of navButtons">
+        {{btn.desc}}
+      </button>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content id = "mainBody">
+    <div id="greeting">
+      <app-greeting></app-greeting>
+    </div>
+    <div id="about">
+      <app-about-me></app-about-me>
+    </div>
+    <div id="journey">
+      <app-journey></app-journey>
+    </div>
+    <div id="projects">
+        <app-projects></app-projects>
+    </div>
+    <div id="thoughts">
+        <app-thoughts></app-thoughts>
+    </div>
+
+    <div id="contacts">
+        <app-contacts></app-contacts>
+    </div>
+    <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
+      <mat-icon >menu</mat-icon>  
+    </button>
+    <div id="btnGrp">
+      <button class="up-btn" mat-flat-button (click)="btnScroll('upBtn')">
+        <mat-icon >arrow_upward</mat-icon>  
+      </button> 
+      <button class="down-btn" mat-flat-button (click)="btnScroll('downBtn')">
+          <mat-icon >arrow_downward</mat-icon>  
+      </button>
+  </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+

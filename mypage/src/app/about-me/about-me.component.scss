@@ -1,0 +1,70 @@
+::ng-deep app-about-me{
+#about{
+    padding-top:40px;
+    padding-bottom:40px;
+    min-height:100vh;
+    @media (orientation: portrait) {
+      width:100%;
+      min-height:100vh;
+          }
+          .title{
+            display: flex;
+            padding-top:20px;
+            padding-bottom:20px;
+            justify-content: center;
+            align-content: center;
+            .titleContent{
+              font-family:arial;
+              font-size:200%;
+              font-weight:500;
+              display: block;
+            }
+            .titleContent::before{
+              background:black;
+
+              display: inline-block;
+              height:2px;
+              position: relative;
+              top:-25%;
+              width:80px;
+              content:" ";
+              margin:0 10px;
+              zoom:1;
+              
+            }
+            .titleContent::after{
+              background:black;
+
+              display: inline-block;
+              height:2px;
+              position: relative;
+              top:-25%;
+              width:80px;
+              content:" ";
+              margin:0 10px;
+              zoom:1;
+            }
+          }
+  
+  
+
+    .myBio{
+      padding-bottom:20px;
+      width:100%;
+      display: flex;
+      min-height:1600px;
+
+
+      .body{
+        font-size: 30px;
+        width:100%;
+
+      }
+    
+  
+
+   
+
+  }
+  }
+}

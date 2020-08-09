@@ -1,0 +1,103 @@
+#greeting{
+
+    height:100vh;
+    padding:0px;
+    background:  url("../../assets/images/cover.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    @media (orientation: portrait) {
+max-height:100vh;
+background:  url("../../assets/images/cover1.jpg");
+background-size:auto 100vh;
+background-repeat: no-repeat;
+    }
+.greetingContainer{
+      display: flex;
+      height:100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      @media (orientation: portrait) {
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+      
+      .title{
+        padding-top:20px;
+        padding-bottom:20px;
+        display:flex;
+        justify-content: center;
+        @media (orientation: portrait) {
+          padding-top:200px;
+          font-size:100%;
+
+                          }
+      }
+        .firstLine{
+          top:40%;
+  
+          position: absolute;
+  
+          font-family:arial;
+          font-size:130%;
+          font-style: italic;
+          font-weight:700;
+        }
+        .titleContent{
+
+          font-family:arial;
+          font-size:300%;
+          font-weight:700;
+          display: block;
+          @media (orientation: portrait) {
+            line-height: 1.2;
+            font-size:700%;
+
+                            }
+        }
+        .titleContent::before{
+          background:black;
+
+          display: inline-block;
+          height:2px;
+          position: absolute;
+          top:48%;
+          left:30%;
+          width:80px;
+          content:" ";
+          margin:0 10px;
+          zoom:1;
+          @media (orientation: portrait) {
+display: none;
+                }
+        }
+        .titleContent::after{
+          background:black;
+
+          display: inline-block;
+          height:2px;
+          position: absolute;
+          top:48%;
+          right:30%;
+          width:80px;
+          content:" ";
+          margin:0 10px;
+          zoom:1;
+          @media (orientation: portrait) {
+            display: grid;
+            left:40%;
+            width:120px;
+            top:0;
+            position: relative;
+                            }
+        }
+      }
+    }
+
+    

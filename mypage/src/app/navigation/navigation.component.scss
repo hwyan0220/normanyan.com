@@ -1,0 +1,98 @@
+
+::ng-deep app-navigation{
+  $break-small: 320px;
+  $break-large: 768px;
+
+mat-drawer-container{
+button{
+  text-align: center;
+
+}
+button:hover{
+  background-color:darkgray;
+}
+height:100%;
+
+.menu-btn{
+  height:60px;
+  top:5%;
+  left:3%;
+  position: fixed;
+  background-color:lightgray;
+
+  .mat-icon{
+    font-size: 40px;
+    width:40px;
+    height:40px;
+
+  }
+
+
+}
+#btnGrp{
+  top:75%;
+  right:3%;
+
+.up-btn{
+  height:60px;
+  top:75%;
+  right:3%;
+  position: fixed;
+  background-color:lightgray;
+
+  .mat-icon{
+    font-size: 40px;
+    width:40px;
+    height:40px;
+
+  }
+
+
+}
+.down-btn{
+  height:60px;
+  top:83%;
+  right:3%;
+  position: fixed;
+  background-color:lightgray;
+  @media (orientation: portrait) {
+    top:83%;
+        }
+  .mat-icon{
+    font-size: 40px;
+    width:40px;
+    height:40px;
+
+  }
+
+
+}
+}
+  .mat-drawer{
+  height:100%;
+  width:500px;
+  ul{
+    button{
+      font-size:18px;
+      width:100%;
+      height:50px;
+      text-align: start;
+      @media (orientation: portrait) {
+        font-size:30px;
+        height:100px;
+      }
+    }
+    
+  }
+
+}          
+        }
+
+
+}
+
+
+
+
+
+
