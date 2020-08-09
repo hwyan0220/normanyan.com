@@ -9,7 +9,7 @@ import { MatDrawer } from '@angular/material';
 })
 export class NavigationComponent {
 
-@ViewChild('drawer') public drawer: MatDrawer;
+@ViewChild('drawer', { static: true }) public drawer: MatDrawer;
 
   constructor() {}
 

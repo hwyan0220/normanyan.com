@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Social Network Lead Generator',
       url: '',
-      img: 'https://cdn.makeawebsitehub.com/wp-content/uploads/2016/04/social_media.jpg',
+      img: 'https://extensionaus.com.au/extension-practice/wp-content/uploads/sites/4/2017/05/Page-Banner.jpg',
       desc: 'A python powered digital solution which mines social networks data and supply user useful \
       "warm leads" information based on user\'s criteria',
       type: 'Digital Solution/Business Development'
