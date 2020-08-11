@@ -1,0 +1,46 @@
+.chatContainer{
+    width: 336px;
+    height:400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 0.2em;
+    .titleBar{
+      padding-left:0.5em;
+      padding-top:0.2em;
+      padding-bottom:0.2em;
+      border-bottom: 1px solid #D7D2CB ;
+      height:10%;
+      background-color:#F4F3F0;
+      margin:0px;
+      display:flex;
+      position:relative;
+.titleWrapper{
+  height:100%;
+  display: flex;
+  position: relative;
+  width:100%;
+  .botAvartar{
+    border-radius: 50%;
+    height:32px;
+    width:32px;
+    position: relative;
+    display: block;
+    img{
+      height:100%;
+      width:100%;
+      border-radius: 50%;
+    }
+  }
+  .botTitle{
+    width:100%;
+    display: flex;
+  }
+  .botTitleBtns{
+    display: flex;
+    float:right;
+    min-height: 28px;
+  }
+}
+      
+        }
+  }

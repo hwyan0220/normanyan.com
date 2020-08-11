@@ -33,14 +33,20 @@
     <button class="menu-btn" mat-flat-button (click)="drawer.toggle()">
       <mat-icon >menu</mat-icon>  
     </button>
-    <div id="btnGrp">
+    <div id="chatbot">
+      <app-chatbot></app-chatbot>
+    </div>
+
+    <!-- <div id="btnGrp">
       <button class="up-btn" mat-flat-button (click)="btnScroll('upBtn')">
         <mat-icon >arrow_upward</mat-icon>  
       </button> 
       <button class="down-btn" mat-flat-button (click)="btnScroll('downBtn')">
           <mat-icon >arrow_downward</mat-icon>  
       </button>
-  </div>
+  </div> -->
+
+  
   </mat-drawer-content>
 </mat-drawer-container>
 

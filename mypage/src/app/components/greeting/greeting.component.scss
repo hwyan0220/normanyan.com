@@ -2,13 +2,13 @@
 
     height:100vh;
     padding:0px;
-    background:  url("../../assets/images/cover.jpeg");
+    background:  url("../../../assets/images/cover.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
 
     @media (orientation: portrait) {
 max-height:100vh;
-background:  url("../../assets/images/cover1.jpg");
+background:  url("../../../assets/images/cover1.jpg");
 background-size:auto 100vh;
 background-repeat: no-repeat;
     }

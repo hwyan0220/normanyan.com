@@ -1,0 +1,13 @@
+<div class="chatcontrol"> 
+    <div class= "row">
+        <div class="col-9 chatinput">
+            <input type="text" #box class="form-control" 
+            placeholder="Type a message..." autofocus
+            (keyup.enter)="sendMessage(box.value); box.value = ''"
+            />      
+        </div>
+        <div class="col-3 sendbtn">
+            <button class="btn btn-success " mat-raised-button (click)="sendMessage()" color="primary">Send</button>
+          </div>
+    </div>
+  </div>

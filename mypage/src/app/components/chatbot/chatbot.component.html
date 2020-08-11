@@ -1,0 +1,20 @@
+<button *ngIf="!chatStatus" mat-raised-button color="primary" class="helpBtn" (click)="toggleChat()">
+Need Help?
+</button>
+<div *ngIf="chatStatus" class="chatContainer" cdkDrag>
+  <div class="titleBar">
+    <div class="titleWrapper">
+      <div class="botAvartar">
+        <img src="assets/images/bot.png">
+      </div>
+      <div class="botTitle">
+        Jasper
+      </div>
+      <div class="botTitleBtns">
+        <mat-icon aria-hidden="false" (click)="toggleChat()">close</mat-icon>
+      </div>      
+    </div>
+  </div>
+  <app-message-list [messages]="messages"></app-message-list>
+  <app-message-form [message]="message" [messages]="messages"></app-message-form>
+</div>
