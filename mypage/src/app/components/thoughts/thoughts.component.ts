@@ -14,7 +14,7 @@ export class ThoughtsComponent implements OnInit {
 
       title: 'End-to-end Machine Learning Project Template — Regression',
       url: 'https://medium.com/@hwyan0220/end-to-end-machine-learning-project-template-regression-eeda8a4e874c',
-      img: 'http://www.healthcatalyst.com/wp-content/uploads/2017/10/machine-learning-in-healthcare.jpg',
+      img: 'assets/images/machinelearning.jpeg',
       desc: 'This workbook is used as a walk-through template of a typical ML project. This follows the process shown in \
       chapter2 of the book — handson ml with sklearn and tf. \
       I have added into this notebook my understanding on each section and also correction to a couple original codes as \
