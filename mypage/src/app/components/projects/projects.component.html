@@ -2,14 +2,13 @@
     <div class="title container">
       <p class="titleContent">
         <strong>
-          Projects I've worked on
-          <br>
-          (Stay tuned, I will share more projects soon)
+          Projects I've worked on ...
+
         </strong>
       </p>
     </div>
     <div class="work container">
-      <mat-grid-list cols="3" rowHeight="360" gutterSize="5px">
+      <mat-grid-list cols="breakpoint" rowHeight="360" gutterSize="5px" (window:resize)="onResize($event)">
         <mat-grid-tile *ngFor="let project of projects">
             <mat-card >
               <mat-card-header>

@@ -48,6 +48,9 @@ background-repeat: no-repeat;
           font-size:130%;
           font-style: italic;
           font-weight:700;
+          @media (orientation: portrait) {
+            top:45%;
+                            }
         }
         .titleContent{
 
@@ -57,7 +60,7 @@ background-repeat: no-repeat;
           display: block;
           @media (orientation: portrait) {
             line-height: 1.2;
-            font-size:700%;
+            font-size:400%;
 
                             }
         }
@@ -67,9 +70,9 @@ background-repeat: no-repeat;
           display: inline-block;
           height:2px;
           position: absolute;
-          top:48%;
+          top:49%;
           left:30%;
-          width:80px;
+          width:3%;
           content:" ";
           margin:0 10px;
           zoom:1;
@@ -83,15 +86,15 @@ display: none;
           display: inline-block;
           height:2px;
           position: absolute;
-          top:48%;
+          top:49%;
           right:30%;
-          width:80px;
+          width:3%;
           content:" ";
           margin:0 10px;
           zoom:1;
           @media (orientation: portrait) {
             display: grid;
-            left:40%;
+            left:30%;
             width:120px;
             top:0;
             position: relative;

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   public status = false;
+  breakpoint: number;
 
   projects =
   [
@@ -55,6 +56,7 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 400) ? 1 : 6;
 
   }
 
@@ -67,6 +69,8 @@ export class ProjectsComponent implements OnInit {
     card.classList.toggle('is-flipped');
       }
   }
-
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 6;
+  }
 
 }
