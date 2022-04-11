@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -56,7 +56,7 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.breakpoint = (window.innerWidth <= 400) ? 1 : 6;
+    this.breakpoint = (window.innerWidth > 400) ? 3 : 1;
 
   }
 
@@ -67,10 +67,12 @@ export class ProjectsComponent implements OnInit {
       e.path[3].childNodes[1].childNodes[0]) {
     const card = e.path[3].childNodes[1].childNodes[0];
     card.classList.toggle('is-flipped');
+    // console.log(e);
       }
-  }
+    }
+  
   onResize(event) {
-    this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 6;
+    this.breakpoint = (event.target.innerWidth > 400) ? 3 : 1;
   }
 
 }
